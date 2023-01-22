@@ -8295,3 +8295,75 @@ button.close {
         display: none !important
     }
 }
+
+.e-mail:before {
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.active-project {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.old-project {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.team-members {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@media screen and (orientation: portrait) {
+
+	.cv-image
+	{
+		width: 50%;
+		height: 50%;
+	}
+
+	.cv-text::before
+	{
+		content: "\a";
+		white-space: pre;
+	}
+
+	.cv-text
+	{
+		display: inline-block;
+		text-align: left;
+	}
+
+	.cv-paragraph
+	{
+		text-align: center;
+	}
+}
+
+@media screen and (orientation: landscape) {
+
+	.cv-text {
+		align-self: flex-start;
+	}
+
+	.intro-text img
+	{
+		width: 30%;
+		height: 30%;
+	}
+
+	.cv-image {
+		width: 20%;
+		height: 20%;
+		margin-right: 30px;
+		flex-shrink: 0;
+		flex: none;
+	}
+
+	.cv-paragraph {
+		display: flex;
+	}
+}
