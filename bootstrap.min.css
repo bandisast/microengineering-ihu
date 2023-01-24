@@ -8317,6 +8317,10 @@ button.close {
     margin-right: 3%;
 }
 
+.useful-info {
+    margin-left: 3%;
+    margin-right: 3%;
+}
 @media screen and (orientation: portrait) {
 
 	.cv-image
